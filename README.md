@@ -7,10 +7,11 @@
   - a Claude account <https://claude.ai/>
   - or Claude Console account here: <https://console.anthropic.com/>
 - VSCode
-  - Claude Official Extension for VSCode: <https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code>
+  - Claude Official Extension for VSCode:
+    <https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code>
     then:
 
-```sh
+````sh
 # Install Claude Code
 npm install -g @anthropic-ai/claude-code
 
@@ -27,13 +28,13 @@ claude
 # 2. Anthropic Console account
 #    API usage billing
 # then set the API key
-```
+```txt
 
 Use `/status` inside Claude to confirm which auth is active. If you ever need to switch, `/logout` and re-set the variable. (Keep in mind: some builds nudge you to login if a cached session exists; clearing `~/.claude*` resets it.)
 
 ```ai
 /status
-```
+```txt
 
 Enable IDE goodies
 
@@ -41,7 +42,7 @@ Inside Claude, run:
 
 ```sh
 /config
-```
+```txt
 
 ## `@file` references
 
@@ -53,7 +54,7 @@ Create a project memory file (helps Claude “think with” your rules and scrip
 
 ```sh
 /init
-```
+```txt
 
 This writes `./CLAUDE.md` (or `./.claude/CLAUDE.md`). You can later include files with `@path/to/file` and manage memories with `/memory`.
 
@@ -107,6 +108,7 @@ You are tasked with creating git commits for the changes made during this sessio
 - Group related changes together
 - Keep commits focused and atomic when possible
 - The user trusts your judgment - they asked you to commit
-```
+```txt
 
 Now relaunch Claude in this project and list available commands with `/help`
+````
